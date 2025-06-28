@@ -15,3 +15,7 @@ test('multiplies 3 * 4 to equal 12', () => {
 test('divides 10 / 2 to equal 5', () => {
   expect(divide(10, 2)).toBe(5);
 });
+
+test('dividing by zero returns Infinity', () => {
+  expect(divide(10, 0)).toBe(Infinity);
+});
